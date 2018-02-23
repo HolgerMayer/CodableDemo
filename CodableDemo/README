@@ -1,0 +1,27 @@
+This project displays in three steps how to use the Codable-protocol with inheritance.
+
+We use two different classes
+
+- ParentClass
+- ChildClass
+
+in three different groups
+
+Model-Step-1 : Only a minimal implementation for init:from Decoder in ChildClass realized
+Model-Step-2 : This adds full implementations of init:from and encode:to in ParentClass
+Model-OK : Here wie ad a full implementation of init:from and encode:to in ChildClass
+
+To switch between these implementations check the target membership of the model to use. Every other model files need to be unchecked
+
+Two Testclasses are implemented
+
+- ParentClassTests
+- ChildClassTests
+
+What are the test result?
+
+The Implementations of Step1 or Step2 both create errors.
+Model-Step-1 creates a runtime Error. And this runtime error is not neccessarily marked at the right place in code!
+Model-Step-2 does not load the Child-Class-Attribute
+
+So to use the Codable-Protocol with inheritance you need to implement init:from and encode:to for the whole inheritance tree.

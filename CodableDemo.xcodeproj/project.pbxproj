@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54953D8020402AEF00A9657D /* ParentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FBE9CC20400CCD006BC913 /* ParentClass.swift */; };
+		54953D8120402AEF00A9657D /* ChildClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FBE9D020400F02006BC913 /* ChildClass.swift */; };
+		54953D8320402B2E00A9657D /* README in Resources */ = {isa = PBXBuildFile; fileRef = 54953D8220402B2E00A9657D /* README */; };
 		54FBE9AB20400C9D006BC913 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FBE9AA20400C9D006BC913 /* AppDelegate.swift */; };
 		54FBE9AD20400C9D006BC913 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FBE9AC20400C9D006BC913 /* ViewController.swift */; };
 		54FBE9B020400C9D006BC913 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54FBE9AE20400C9D006BC913 /* Main.storyboard */; };
 		54FBE9B220400C9D006BC913 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54FBE9B120400C9D006BC913 /* Assets.xcassets */; };
 		54FBE9B520400C9D006BC913 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54FBE9B320400C9D006BC913 /* LaunchScreen.storyboard */; };
-		54FBE9C020400C9D006BC913 /* CodableDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FBE9BF20400C9D006BC913 /* CodableDemoTests.swift */; };
+		54FBE9CF20400D17006BC913 /* ParentClassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FBE9CE20400D17006BC913 /* ParentClassTests.swift */; };
+		54FBE9D320400FA1006BC913 /* ChildClassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FBE9D220400FA1006BC913 /* ChildClassTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		54953D8220402B2E00A9657D /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		54FBE9A720400C9D006BC913 /* CodableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54FBE9AA20400C9D006BC913 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54FBE9AC20400C9D006BC913 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,8 +39,15 @@
 		54FBE9B420400C9D006BC913 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54FBE9B620400C9D006BC913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54FBE9BB20400C9D006BC913 /* CodableDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodableDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		54FBE9BF20400C9D006BC913 /* CodableDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableDemoTests.swift; sourceTree = "<group>"; };
 		54FBE9C120400C9D006BC913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54FBE9CC20400CCD006BC913 /* ParentClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentClass.swift; sourceTree = "<group>"; };
+		54FBE9CE20400D17006BC913 /* ParentClassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentClassTests.swift; sourceTree = "<group>"; };
+		54FBE9D020400F02006BC913 /* ChildClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildClass.swift; sourceTree = "<group>"; };
+		54FBE9D220400FA1006BC913 /* ChildClassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildClassTests.swift; sourceTree = "<group>"; };
+		54FBE9D5204028BC006BC913 /* ChildClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildClass.swift; sourceTree = "<group>"; };
+		54FBE9D6204028BC006BC913 /* ParentClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentClass.swift; sourceTree = "<group>"; };
+		54FBE9D8204028DC006BC913 /* ChildClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildClass.swift; sourceTree = "<group>"; };
+		54FBE9D9204028DC006BC913 /* ParentClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +89,10 @@
 		54FBE9A920400C9D006BC913 /* CodableDemo */ = {
 			isa = PBXGroup;
 			children = (
+				54953D8220402B2E00A9657D /* README */,
+				54FBE9D4204028A1006BC913 /* Model-Step-1 */,
+				54FBE9D7204028D0006BC913 /* Model-Step-2 */,
+				54FBE9CA20400CAC006BC913 /* Model-OK */,
 				54FBE9AA20400C9D006BC913 /* AppDelegate.swift */,
 				54FBE9AC20400C9D006BC913 /* ViewController.swift */,
 				54FBE9AE20400C9D006BC913 /* Main.storyboard */,
@@ -90,10 +106,38 @@
 		54FBE9BE20400C9D006BC913 /* CodableDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				54FBE9BF20400C9D006BC913 /* CodableDemoTests.swift */,
 				54FBE9C120400C9D006BC913 /* Info.plist */,
+				54FBE9CE20400D17006BC913 /* ParentClassTests.swift */,
+				54FBE9D220400FA1006BC913 /* ChildClassTests.swift */,
 			);
 			path = CodableDemoTests;
+			sourceTree = "<group>";
+		};
+		54FBE9CA20400CAC006BC913 /* Model-OK */ = {
+			isa = PBXGroup;
+			children = (
+				54FBE9CC20400CCD006BC913 /* ParentClass.swift */,
+				54FBE9D020400F02006BC913 /* ChildClass.swift */,
+			);
+			path = "Model-OK";
+			sourceTree = "<group>";
+		};
+		54FBE9D4204028A1006BC913 /* Model-Step-1 */ = {
+			isa = PBXGroup;
+			children = (
+				54FBE9D6204028BC006BC913 /* ParentClass.swift */,
+				54FBE9D5204028BC006BC913 /* ChildClass.swift */,
+			);
+			path = "Model-Step-1";
+			sourceTree = "<group>";
+		};
+		54FBE9D7204028D0006BC913 /* Model-Step-2 */ = {
+			isa = PBXGroup;
+			children = (
+				54FBE9D9204028DC006BC913 /* ParentClass.swift */,
+				54FBE9D8204028DC006BC913 /* ChildClass.swift */,
+			);
+			path = "Model-Step-2";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +194,7 @@
 					};
 					54FBE9BA20400C9D006BC913 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 54FBE9A620400C9D006BC913;
 					};
@@ -179,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54953D8320402B2E00A9657D /* README in Resources */,
 				54FBE9B520400C9D006BC913 /* LaunchScreen.storyboard in Resources */,
 				54FBE9B220400C9D006BC913 /* Assets.xcassets in Resources */,
 				54FBE9B020400C9D006BC913 /* Main.storyboard in Resources */,
@@ -200,6 +246,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				54FBE9AD20400C9D006BC913 /* ViewController.swift in Sources */,
+				54953D8120402AEF00A9657D /* ChildClass.swift in Sources */,
+				54953D8020402AEF00A9657D /* ParentClass.swift in Sources */,
 				54FBE9AB20400C9D006BC913 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,7 +256,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54FBE9C020400C9D006BC913 /* CodableDemoTests.swift in Sources */,
+				54FBE9CF20400D17006BC913 /* ParentClassTests.swift in Sources */,
+				54FBE9D320400FA1006BC913 /* ChildClassTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,12 +433,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZTF477US4D;
 				INFOPLIST_FILE = CodableDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.h-mayer.CodableDemoTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodableDemo.app/CodableDemo";
@@ -401,6 +452,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZTF477US4D;
 				INFOPLIST_FILE = CodableDemoTests/Info.plist;
