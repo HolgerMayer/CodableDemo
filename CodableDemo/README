@@ -13,6 +13,12 @@ struct or class Codable.
 In case of an enum the encoder and decoder routines need to be implemented.
 
 ############################
+Complex
+############################
+
+The Complex-Example displays, that if your own classes implements Codable, a Class or struct with attributes of your Codable classes, structs or enum still only needs to declare the Codable protocol. Everything else works behind the scene.
+
+############################
 Inheritance
 ############################
 
