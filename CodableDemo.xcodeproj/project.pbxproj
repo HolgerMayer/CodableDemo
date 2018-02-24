@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5419C0972041FDFD00251B4B /* BasicStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5419C0962041FDFD00251B4B /* BasicStruct.swift */; };
+		5419C0992041FE0600251B4B /* BasicClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5419C0982041FE0600251B4B /* BasicClass.swift */; };
+		5419C09D2041FF1500251B4B /* BasicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5419C09C2041FF1500251B4B /* BasicTests.swift */; };
+		5419C09E204222E200251B4B /* BasicEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5419C09A2041FE1600251B4B /* BasicEnum.swift */; };
 		54953D8020402AEF00A9657D /* ParentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FBE9CC20400CCD006BC913 /* ParentClass.swift */; };
 		54953D8120402AEF00A9657D /* ChildClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FBE9D020400F02006BC913 /* ChildClass.swift */; };
 		54953D8320402B2E00A9657D /* README in Resources */ = {isa = PBXBuildFile; fileRef = 54953D8220402B2E00A9657D /* README */; };
@@ -30,6 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5419C0962041FDFD00251B4B /* BasicStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicStruct.swift; sourceTree = "<group>"; };
+		5419C0982041FE0600251B4B /* BasicClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicClass.swift; sourceTree = "<group>"; };
+		5419C09A2041FE1600251B4B /* BasicEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicEnum.swift; sourceTree = "<group>"; };
+		5419C09C2041FF1500251B4B /* BasicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTests.swift; sourceTree = "<group>"; };
 		54953D8220402B2E00A9657D /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		54FBE9A720400C9D006BC913 /* CodableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54FBE9AA20400C9D006BC913 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +76,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5419C0922041FD8700251B4B /* Inheritance */ = {
+			isa = PBXGroup;
+			children = (
+				54FBE9D4204028A1006BC913 /* Model-Step-1 */,
+				54FBE9D7204028D0006BC913 /* Model-Step-2 */,
+				54FBE9CA20400CAC006BC913 /* Model-OK */,
+			);
+			name = Inheritance;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		5419C0932041FDA100251B4B /* Inheritance */ = {
+			isa = PBXGroup;
+			children = (
+				54FBE9CE20400D17006BC913 /* ParentClassTests.swift */,
+				54FBE9D220400FA1006BC913 /* ChildClassTests.swift */,
+			);
+			name = Inheritance;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		5419C0942041FDB400251B4B /* Basics */ = {
+			isa = PBXGroup;
+			children = (
+				5419C0962041FDFD00251B4B /* BasicStruct.swift */,
+				5419C0982041FE0600251B4B /* BasicClass.swift */,
+				5419C09A2041FE1600251B4B /* BasicEnum.swift */,
+			);
+			name = Basics;
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		5419C0952041FDC200251B4B /* Basics */ = {
+			isa = PBXGroup;
+			children = (
+				5419C09C2041FF1500251B4B /* BasicTests.swift */,
+			);
+			path = Basics;
+			sourceTree = "<group>";
+		};
 		54FBE99E20400C9D006BC913 = {
 			isa = PBXGroup;
 			children = (
@@ -90,9 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				54953D8220402B2E00A9657D /* README */,
-				54FBE9D4204028A1006BC913 /* Model-Step-1 */,
-				54FBE9D7204028D0006BC913 /* Model-Step-2 */,
-				54FBE9CA20400CAC006BC913 /* Model-OK */,
+				5419C0942041FDB400251B4B /* Basics */,
+				5419C0922041FD8700251B4B /* Inheritance */,
 				54FBE9AA20400C9D006BC913 /* AppDelegate.swift */,
 				54FBE9AC20400C9D006BC913 /* ViewController.swift */,
 				54FBE9AE20400C9D006BC913 /* Main.storyboard */,
@@ -106,9 +153,9 @@
 		54FBE9BE20400C9D006BC913 /* CodableDemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				5419C0952041FDC200251B4B /* Basics */,
+				5419C0932041FDA100251B4B /* Inheritance */,
 				54FBE9C120400C9D006BC913 /* Info.plist */,
-				54FBE9CE20400D17006BC913 /* ParentClassTests.swift */,
-				54FBE9D220400FA1006BC913 /* ChildClassTests.swift */,
 			);
 			path = CodableDemoTests;
 			sourceTree = "<group>";
@@ -246,9 +293,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				54FBE9AD20400C9D006BC913 /* ViewController.swift in Sources */,
+				5419C0992041FE0600251B4B /* BasicClass.swift in Sources */,
 				54953D8120402AEF00A9657D /* ChildClass.swift in Sources */,
+				5419C09E204222E200251B4B /* BasicEnum.swift in Sources */,
 				54953D8020402AEF00A9657D /* ParentClass.swift in Sources */,
 				54FBE9AB20400C9D006BC913 /* AppDelegate.swift in Sources */,
+				5419C0972041FDFD00251B4B /* BasicStruct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +308,7 @@
 			files = (
 				54FBE9CF20400D17006BC913 /* ParentClassTests.swift in Sources */,
 				54FBE9D320400FA1006BC913 /* ChildClassTests.swift in Sources */,
+				5419C09D2041FF1500251B4B /* BasicTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,4 +1,22 @@
-This project displays in three steps how to use the Codable-protocol with inheritance.
+############################
+Basics
+############################
+
+We introduce the usage of Codable with
+structs -> BasicStruct.swift
+classes -> BasicClass.swift
+enum -> BAsicEnum.swift
+
+structs and classes are straightforward. In case that attributes are Codable it is only neccessary to declared the
+struct or class Codable.
+
+In case of an enum the encoder and decoder routines need to be implemented.
+
+############################
+Inheritance
+############################
+
+This group displays in three steps how to use the Codable-protocol with inheritance.
 
 We use two different classes
 
