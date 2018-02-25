@@ -19,6 +19,14 @@ Complex
 The Complex-Example displays, that if your own classes implements Codable, a Class or struct with attributes of your Codable classes, structs or enum still only needs to declare the Codable protocol. Everything else works behind the scene.
 
 ############################
+JSON
+############################
+
+This Example show, how to write and read JSON (Testcase JSONTests) and how to rename the codingkeys (CustomizedStruct.swift)
+
+Hint : If you got a typo in your codingkeys, the compiler asks you to implement encode and decode for your class, struct or enum. Check the correct writing of your keys. The need to bee the same as your attribute names.
+
+############################
 Inheritance
 ############################
 
