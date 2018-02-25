@@ -16,9 +16,13 @@
 		5419C0A620422D0F00251B4B /* ComplexStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5419C0A520422D0F00251B4B /* ComplexStruct.swift */; };
 		5419C0AA20422EC800251B4B /* JSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5419C0A920422EC800251B4B /* JSONTests.swift */; };
 		5419C0AC2042301B00251B4B /* CustomizedStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5419C0AB2042301B00251B4B /* CustomizedStruct.swift */; };
+		542BDD072042C3A0008152DE /* CustomClassWithNilValueOK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542BDD062042C3A0008152DE /* CustomClassWithNilValueOK.swift */; };
+		542BDD092042C41C008152DE /* CustomClassWithOptionalTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542BDD082042C41C008152DE /* CustomClassWithOptionalTest.swift */; };
 		54953D8020402AEF00A9657D /* ParentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FBE9CC20400CCD006BC913 /* ParentClass.swift */; };
 		54953D8120402AEF00A9657D /* ChildClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FBE9D020400F02006BC913 /* ChildClass.swift */; };
 		54953D8320402B2E00A9657D /* README in Resources */ = {isa = PBXBuildFile; fileRef = 54953D8220402B2E00A9657D /* README */; };
+		54AD86962042B27700C98CEF /* BasicClassWithNilValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AD86952042B27700C98CEF /* BasicClassWithNilValue.swift */; };
+		54AD86992042B2C200C98CEF /* BasicClassWithOptionalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AD86982042B2C200C98CEF /* BasicClassWithOptionalTests.swift */; };
 		54FBE9AB20400C9D006BC913 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FBE9AA20400C9D006BC913 /* AppDelegate.swift */; };
 		54FBE9AD20400C9D006BC913 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FBE9AC20400C9D006BC913 /* ViewController.swift */; };
 		54FBE9B020400C9D006BC913 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54FBE9AE20400C9D006BC913 /* Main.storyboard */; };
@@ -48,7 +52,13 @@
 		5419C0A520422D0F00251B4B /* ComplexStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexStruct.swift; sourceTree = "<group>"; };
 		5419C0A920422EC800251B4B /* JSONTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONTests.swift; sourceTree = "<group>"; };
 		5419C0AB2042301B00251B4B /* CustomizedStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizedStruct.swift; sourceTree = "<group>"; };
+		542BDD022042C1B2008152DE /* CustomClassWithNilValueWrong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomClassWithNilValueWrong.swift; sourceTree = "<group>"; };
+		542BDD042042C234008152DE /* WrongCustomClassWithOptionaltest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrongCustomClassWithOptionaltest.swift; sourceTree = "<group>"; };
+		542BDD062042C3A0008152DE /* CustomClassWithNilValueOK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomClassWithNilValueOK.swift; sourceTree = "<group>"; };
+		542BDD082042C41C008152DE /* CustomClassWithOptionalTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomClassWithOptionalTest.swift; sourceTree = "<group>"; };
 		54953D8220402B2E00A9657D /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		54AD86952042B27700C98CEF /* BasicClassWithNilValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicClassWithNilValue.swift; sourceTree = "<group>"; };
+		54AD86982042B2C200C98CEF /* BasicClassWithOptionalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicClassWithOptionalTests.swift; sourceTree = "<group>"; };
 		54FBE9A720400C9D006BC913 /* CodableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54FBE9AA20400C9D006BC913 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54FBE9AC20400C9D006BC913 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -159,6 +169,26 @@
 			path = JSON;
 			sourceTree = "<group>";
 		};
+		54AD86942042B24900C98CEF /* Optionals */ = {
+			isa = PBXGroup;
+			children = (
+				54AD86952042B27700C98CEF /* BasicClassWithNilValue.swift */,
+				542BDD022042C1B2008152DE /* CustomClassWithNilValueWrong.swift */,
+				542BDD062042C3A0008152DE /* CustomClassWithNilValueOK.swift */,
+			);
+			path = Optionals;
+			sourceTree = "<group>";
+		};
+		54AD86972042B29C00C98CEF /* Optionals */ = {
+			isa = PBXGroup;
+			children = (
+				54AD86982042B2C200C98CEF /* BasicClassWithOptionalTests.swift */,
+				542BDD042042C234008152DE /* WrongCustomClassWithOptionaltest.swift */,
+				542BDD082042C41C008152DE /* CustomClassWithOptionalTest.swift */,
+			);
+			path = Optionals;
+			sourceTree = "<group>";
+		};
 		54FBE99E20400C9D006BC913 = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +214,7 @@
 				5419C0942041FDB400251B4B /* Basics */,
 				5419C09F20422A4B00251B4B /* Complex */,
 				5419C0A720422E9700251B4B /* JSON */,
+				54AD86942042B24900C98CEF /* Optionals */,
 				5419C0922041FD8700251B4B /* Inheritance */,
 				54FBE9AA20400C9D006BC913 /* AppDelegate.swift */,
 				54FBE9AC20400C9D006BC913 /* ViewController.swift */,
@@ -201,6 +232,7 @@
 				5419C0952041FDC200251B4B /* Basics */,
 				5419C0A220422B1300251B4B /* Complex */,
 				5419C0A820422EAA00251B4B /* JSON */,
+				54AD86972042B29C00C98CEF /* Optionals */,
 				5419C0932041FDA100251B4B /* Inheritance */,
 				54FBE9C120400C9D006BC913 /* Info.plist */,
 			);
@@ -349,6 +381,8 @@
 				54FBE9AB20400C9D006BC913 /* AppDelegate.swift in Sources */,
 				5419C0972041FDFD00251B4B /* BasicStruct.swift in Sources */,
 				5419C0A620422D0F00251B4B /* ComplexStruct.swift in Sources */,
+				542BDD072042C3A0008152DE /* CustomClassWithNilValueOK.swift in Sources */,
+				54AD86962042B27700C98CEF /* BasicClassWithNilValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +394,8 @@
 				54FBE9CF20400D17006BC913 /* ParentClassTests.swift in Sources */,
 				54FBE9D320400FA1006BC913 /* ChildClassTests.swift in Sources */,
 				5419C09D2041FF1500251B4B /* BasicTests.swift in Sources */,
+				542BDD092042C41C008152DE /* CustomClassWithOptionalTest.swift in Sources */,
+				54AD86992042B2C200C98CEF /* BasicClassWithOptionalTests.swift in Sources */,
 				5419C0AA20422EC800251B4B /* JSONTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

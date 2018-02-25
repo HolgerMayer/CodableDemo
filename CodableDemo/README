@@ -27,6 +27,16 @@ This Example show, how to write and read JSON (Testcase JSONTests) and how to re
 Hint : If you got a typo in your codingkeys, the compiler asks you to implement encode and decode for your class, struct or enum. Check the correct writing of your keys. The need to bee the same as your attribute names.
 
 ############################
+Optionals
+############################
+
+We lern how to load and save Optionals
+BasicClassWithNilValue shows the use oautomatic coding and decoding. Everything is ok
+CustomClassWIthNilValueWrong has two errors. It reads and writes nil-Values with encode and decode. This leads to exceptions
+CustomClassWithNilValueOK uses encodeIfPresent and decodeIfPresent on optionals. THis is the correct way for custom encode and decode of optionals.
+
+
+############################
 Inheritance
 ############################
 
