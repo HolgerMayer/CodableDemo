@@ -1,0 +1,77 @@
+############################
+Basics
+############################
+
+We introduce the usage of Codable with
+structs -> BasicStruct.swift
+classes -> BasicClass.swift
+enum -> BasicEnum.swift
+
+structs and classes are straight forward. In case that attributes are Codable it is only neccessary to declared the
+struct or class Codable.
+
+In case of an enum the encoder and decoder routines need to be implemented.
+
+############################
+Complex
+############################
+
+The Complex-Example displays that if your own classes implements Codable, a Class or struct with attributes of your Codable classes, structs or enum still only needs to declare the Codable protocol. Everything else works behind the scene.
+
+############################
+JSON
+############################
+
+This Example show, how to write and read JSON (Testcase JSONTests) and how to rename the codingkeys (CustomizedStruct.swift)
+
+Hint : If you got a typo in your codingkeys, the compiler asks you to implement encode and decode for your class, struct or enum. Check the correct writing of your keys. The need to be the same as your attribute names.
+
+############################
+Optionals
+############################
+
+We learn how to load and save Optionals
+BasicClassWithNilValue shows the use automatic coding and decoding. Everything is ok
+CustomClassWIthNilValueWrong has two errors. It reads and writes nil-Values with encode and decode. This leads to exceptions
+CustomClassWithNilValueOK uses encodeIfPresent and decodeIfPresent on optionals. This is the correct way for custom encode and decode of optionals.
+
+
+############################
+Inheritance
+############################
+
+This group displays in three steps how to use the Codable-protocol with inheritance.
+
+We use two different classes
+
+- ParentClass
+- ChildClass
+
+in three different groups
+
+Model-Step-1 : Only a minimal implementation for init:from Decoder in ChildClass realized
+Model-Step-2 : This adds full implementations of init:from and encode:to in ParentClass
+Model-OK : Here wie ad a full implementation of init:from and encode:to in ChildClass
+
+To switch between these implementations check the target membership of the model to use. Every other model files need to be unchecked
+
+Two test classes are implemented
+
+- ParentClassTests
+- ChildClassTests
+
+What are the test result?
+
+The implementations of Step1 or Step2 both create errors.
+Model-Step-1 creates a runtime error. And this runtime error is not neccessarily marked at the right place in code!
+Model-Step-2 does not load the Child-Class-Attribute
+
+So to use the Codable-Protocol with inheritance you need to implement init:from and encode:to for the whole inheritance tree.
+
+
+##################################
+InheritanceAndCollections
+##################################
+This group displays how to correctly store and load heterogenious collections with the Codable protocol.
+First write a key describing which kind of class is written. Then write the object.
+When reading back the data we first read the key to know which kind of object follows and then call the correct reader.
