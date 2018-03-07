@@ -67,3 +67,11 @@ Model-Step-1 creates a runtime Error. And this runtime error is not neccessarily
 Model-Step-2 does not load the Child-Class-Attribute
 
 So to use the Codable-Protocol with inheritance you need to implement init:from and encode:to for the whole inheritance tree.
+
+
+##################################
+InheritanceAndCollections
+##################################
+This group displays how to correctly store and load heterogenious collections with the Codable protocol.
+The key is to write first while writing an object which kind of class is written.
+When reading back the data we first read, which kind of object follows and then call the correct reader.
